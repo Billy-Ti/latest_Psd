@@ -1,0 +1,436 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 以下開始 */
+
+.wrap {
+    max-width: 1025px;
+    margin: 0 auto;
+    font-family: "微軟正黑體", sans-serif;
+}
+
+.communityLink {
+    background-color: #f6f6f6;
+}
+
+.communityLink .communityLinkMenu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+}
+
+.communityLink .communityLinkMenu a {
+    color: #5c5f95;
+    font-weight: bold;
+    display: block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.communityLink .communityLinkMenu li {
+    padding: 5px 0;
+    position: relative;
+}
+
+.communityLink .communityLinkMenu li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    top: 30px;
+    display: block;
+    background-color: #74F2CE;
+    transition: .4s .2s;
+}
+
+.communityLink .communityLinkMenu li:hover::after {
+    width: 100%;
+}
+
+.communityLink .communityLinkMenu .followUsLink {
+    color: #26abdc;
+}
+
+.communityLink .communityLinkMenu .followUsLink:before {
+    content: "";
+    border-right: 1px solid #d3d3d3;
+}
+
+.communityLink .communityLinkMenu .followUsLink img {
+    margin-left: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 .header_Logo {
+    display: block;
+    width: 224px;
+    height: 50px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header h1 .header_Logo:hover {
+    box-shadow: 0 7px 10px #74F2CE;
+    opacity: .5;
+}
+
+.headerMenu li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background-color: #74F2CE;
+    transition: .4s .2s;
+}
+
+.headerMenu li:hover::after {
+    width: 100%;
+}
+
+.header .headerMenu {
+    display: flex;
+}
+
+.header .headerMenu a {
+    color: #00d5a0;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 25px 10px 15px;
+    text-decoration: none;
+}
+
+.banner {
+    max-width: 100%;
+    height: 346px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.banner .bannerContent {
+    font-weight: bold;
+    background-color: rgb(0, 0, 0, .2);
+    color: white;
+    flex-grow: 1;
+}
+
+.banner .bannerContent h2 {
+    font-size: 32px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.banner .bannerContent p {
+    font-size: 32px;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.content .ulOfCourse {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content .contentOfCourse {
+    width: 325px;
+    box-shadow: 0 3px 5px lightgray;
+}
+
+.content .contentOfCourse:hover {
+    box-shadow: 0 7px 10px #74F2CE;
+}
+
+.content .contentOfCourse h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.content .contentOfCourse p {
+    font-size: 16px;
+    padding: 15px 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.contentOfCourse .RWD_description {
+    letter-spacing: 5px;
+}
+
+.jQuery_courseList {
+    text-align: left;
+}
+
+.jQuery_courseList li {
+    list-style-type: disc;
+    margin: 0 0 5px 30px;
+    line-height: 1.1;
+}
+
+.courseTable {
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.courseTable .courseTableHight:hover {
+    background-color: #F1F3F5;
+}
+
+.courseTable h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.courseTable th {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0 10px 25px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #f7f7f7;
+}
+
+.courseTable table {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.courseTable table td {
+    padding: 15px 10px 10px 26px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.courseTable .courseTableContent {
+    color: #5ac9a4;
+}
+
+.formArea {
+    width: 1024px;
+    background: linear-gradient(#00654c, #009771);
+}
+
+.formAreaTitle {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.formInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formInfo textarea {
+    border-radius: 5px;
+    width: 470px;
+    height: 255px;
+    margin: 0 0 30px 20px;
+}
+
+.formInfo .labelContent {
+    width: 465px;
+    color: white;
+}
+
+.labelContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.labelContent input {
+    width: 430px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.labelContent .submit:hover {
+    border: 2px solid white;
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px 100px 10px;
+}
+
+.footerLink {
+    font-weight: bold;
+}
+
+.footerLink a {
+    text-decoration: none;
+    line-height: 1.5;
+    color: #d93773;
+}
+
+.footer a:hover {
+    opacity: .5;
+    text-decoration: underline #d93773;
+    ;
+}
+
+.labelContent .submit {
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    background-color: #00cc98;
+    cursor: pointer;
+}
