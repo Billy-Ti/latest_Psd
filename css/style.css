@@ -142,17 +142,17 @@ table {
     font-family: "微軟正黑體", sans-serif;
 }
 
-.communityLink {
+.communityLinkMenu {
     background-color: #f6f6f6;
 }
 
-.communityLink .communityLinkMenu {
+.communityLinkMenu {
     display: flex;
     justify-content: flex-end;
     padding: 5px 0;
 }
 
-.communityLink .communityLinkMenu a {
+.communityLinkMenu a {
     color: #5c5f95;
     font-weight: bold;
     display: block;
@@ -160,12 +160,12 @@ table {
     text-decoration: none;
 }
 
-.communityLink .communityLinkMenu li {
+.communityLinkMenu li {
     padding: 5px 0;
     position: relative;
 }
 
-.communityLink .communityLinkMenu li::after {
+.communityLinkMenu li::after {
     content: "";
     width: 0%;
     height: 3px;
@@ -176,20 +176,20 @@ table {
     transition: .4s .2s;
 }
 
-.communityLink .communityLinkMenu li:hover::after {
+.communityLinkMenu li:hover::after {
     width: 100%;
 }
 
-.communityLink .communityLinkMenu .followUsLink {
+.communityLinkMenu .followUsLink {
     color: #26abdc;
 }
 
-.communityLink .communityLinkMenu .followUsLink:before {
+.communityLinkMenu .followUsLink:before {
     content: "";
     border-right: 1px solid #d3d3d3;
 }
 
-.communityLink .communityLinkMenu .followUsLink img {
+.communityLinkMenu .followUsLink img {
     margin-left: 10px;
 }
 
@@ -381,9 +381,11 @@ table {
     color: white;
 }
 
+.labelContent label {
+    display: block;
+}
+
 .labelContent {
-    display: flex;
-    flex-direction: column;
     position: relative;
 }
 
