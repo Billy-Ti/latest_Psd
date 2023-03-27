@@ -267,27 +267,27 @@ table {
     line-height: 1.5;
 }
 
-.content .ulOfCourse {
+.ulOfCourse {
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
-.content .contentOfCourse {
+.contentOfCourse {
     width: 325px;
     box-shadow: 0 3px 5px lightgray;
 }
 
-.content .contentOfCourse:hover {
+.contentOfCourse:hover {
     box-shadow: 0 7px 10px #74F2CE;
 }
 
-.content .contentOfCourse h2 {
+.contentOfCourse h2 {
     font-weight: bold;
     font-size: 22px;
 }
 
-.content .contentOfCourse p {
+.contentOfCourse p {
     font-size: 16px;
     padding: 15px 20px;
     letter-spacing: 2px;
